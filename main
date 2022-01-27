@@ -1,0 +1,16 @@
+clc;
+A=[3 -0.1 -0.2; 0.1 7 -0.3; 0.3 -0.2 10];
+b=[7.85 -19.3 71.4];
+
+r=gauss(A,b);
+fprintf('valores resultantes= %d %d %d',r);
+
+figure(1);
+plot(b)
+hold on
+plot(b)
+hold off
+xlabel('t')
+ylabel('x,y')
+legend('x(t)','y(t)')
+title('Sistemas de Ecuaciones Diferenciales')
